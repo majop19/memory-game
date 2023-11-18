@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Kumbh Sans:700|Kumbh Sans:400');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+#app {
+    --color-background: 244 251 246;
+    --color-paper: 201 232 202;
+    --color-text-primary: 32 60 37;
+    --color-text-secondary: 42 126 129;
+  
+    --color-primary: 178 221 181;
+    --color-secondary: 101 186 116;
+  }
+  
+  #app.dark {
+    --color-background: 252 252 252;
+    --color-paper: 229 72 77;
+    --color-text-primary: 100 23 35;
+    --color-text-secondary: 217 217 217;
+  
+    --color-primary: 181 69 72;
+    --color-secondary: 114 45 35;
+  }
+  
+  #app {
+    @apply bg-background text-skin-primary;
+  }
+  
+  * {
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  
+  a {
+    @apply text-primary;
+  }
+  
+  a:hover {
+    @apply underline;
+  }
+
