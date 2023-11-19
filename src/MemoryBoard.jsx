@@ -11,7 +11,7 @@ export const MemoryBoard = () => {
     }
   
     return (
-      <div className={clsx('grid gap-2 w-max mx-auto mt-[-150px] mb-[10px]',{['grid-cols-6 grid-rows-6']: isEasy,['grid-cols-8 grid-rows-8']: !isEasy})}>
+      <div className={clsx('grid gap-2 w-max mx-auto md:mt-[-150px] md:mb-[10px] mt-[-80px]',{['grid-cols-6 grid-rows-6']: isEasy,['md:grid-cols-8 md:grid-rows-8 grid-cols-10 grid-rows-6 mb-[-51px]']: !isEasy})}>
         {cards?.map((card) => (
           <MemoryCard onClick={() => onReturnCard(card)} key={card.id} card={card}>
             {card.emoji}
